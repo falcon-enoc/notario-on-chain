@@ -22,8 +22,8 @@ contract HolaMundo {
     // Tercera versión del código
     string private saludo;
 
-    constructor() {
-        saludo = "Hola Mundo";
+    constructor(string memory _saludo) {
+        saludo = _saludo;
     }
 
     function getSaludo() public view returns (string memory) {
